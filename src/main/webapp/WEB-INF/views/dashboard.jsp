@@ -16,11 +16,15 @@
     <h3 class="form-signin-heading text-center mb-5">nahwasa.com</h3>
 
     <h3 class="overview-normalize">접속 아이디</h3>
-    <p id='login_id'>
+<%--    <p id='login_id'>--%>
+    <p>
+        ${loginId}
     </p>
     <hr/>
     <h3 class="overview-normalize">역할</h3>
-    <p id='pw'>
+<%--    <p id='pw'>--%>
+    <p>
+        ${loginRoles}
     </p>
     <hr/>
     <h3 class="overview-normalize">역할에 따른 페이지 이동 권한 확인</h3>
@@ -33,15 +37,15 @@
         <button class="btn btn-sm btn-danger btn-block" type="submit" id="logout_btn">로그아웃</button>
     </form>
 
-    <script>
-        const loginId = document.getElementById('login_id');
-        loginId.innerHTML = sessionStorage.getItem('userid');
+<%--    <script>--%>
+<%--        const loginId = document.getElementById('login_id');--%>
+<%--        loginId.innerHTML = sessionStorage.getItem('userid');--%>
 
-        const logoutBtn = document.getElementById('logout_btn');
-        logoutBtn.addEventListener('click', () => {
-            sessionStorage.setItem('userid', '');
-        });
-    </script>
+<%--        const logoutBtn = document.getElementById('logout_btn');--%>
+<%--        logoutBtn.addEventListener('click', () => {--%>
+<%--            sessionStorage.setItem('userid', '');--%>
+<%--        });--%>
+<%--    </script>--%>
 </div>
 </body>
 </html>

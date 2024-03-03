@@ -15,13 +15,13 @@ public class LoginController {
         this.memberService = memberService;
     }
 
-    @PostMapping("/login-process")
-    public String login(MemberLoginDto dto) {
-        boolean isValidMember = memberService.isValidMember(dto.getUserid(), dto.getPw());
-        if (isValidMember)
-            return "dashboard";
-        return "login";
-    }
+//    @PostMapping("/login-process")
+//    public String login(MemberLoginDto dto) {
+//        boolean isValidMember = memberService.isValidMember(dto.getUserid(), dto.getPw());
+//        if (isValidMember)
+//            return "dashboard";
+//        return "login";
+//    }
 
     @PostMapping("/logout")
     public String logout() {
